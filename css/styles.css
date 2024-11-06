@@ -63,6 +63,22 @@ svg {
     margin-right: auto;
 }
 
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px;
@@ -74,6 +90,11 @@ svg {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -330,6 +351,164 @@ address {
     }
 }
 /* ============= HERO SECTION STYLES ============= */
+
+/* =============== BENEFITS STYLES =============== */
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.benefits-list-icon {
+    display: none;
+}
+
+.benefits-list-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.benefits-list-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .benefits-list-item {
+        flex-basis: calc((100% - 24px)/2)
+    }
+
+    .benefits-list-title {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .benefits-list-item {
+        flex-basis: calc((100% - 72px)/4)
+    }
+
+    .benefits-list-icon {
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+    }
+
+    .benefits-list-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+/* =============== BENEFITS STYLES =============== */
+
+/* ================= TEAM STYLES ================= */
+.team-section {
+    background-color: #F4F4FD;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+}
+
+.team-list-item {
+    background-color: #ffffff;
+    max-width: 264px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-list-content {
+    padding: 32px 0;
+}
+
+.team-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-list-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-social-list-icon {
+    fill: #f4f4fd
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.team-social-list-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-list-link:hover,
+.team-social-list-link:focus {
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    .team-list-item {
+        flex-basis: calc((100% - 24px)/2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list-item {
+        flex-basis: calc((100% - 72px)/4);
+    }
+}
+/* ================= TEAM STYLES ================= */
 
 /* ============= MODAL WINDOW STYLES ============= */
 .modal-backdrop {
